@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DropDown User</title>
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,500&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="container">
+        <div class="user" onclick="userMenu();">
+            <img src="954384.jpg" alt=""> <!-- you can change the image -->
+        </div>
+        <div class="dropdown">
+            <div class="user-detail">
+                <h4>Fatih Akmal Hibatullah</h4> <!-- change the name -->
+                <p>Lorem, ipsum dolor.</p> <!-- this user status -->
+            </div>
+            <!-- you can change dropdown menu -->
+            <div class="content">
+                <a href="#"><i class="bx bxs-user"></i>Your Profil</a>
+                <a href="#"><i class='bx bxs-user-plus'></i>Your Follower</a>
+                <a href="#"><i class='bx bx-bar-chart'></i>Your Activity</a>
+                <a href="#"><i class='bx bxs-gift' ></i>Your Gift</a>
+                <a href="#"><i class='bx bxs-medal'></i>Achievement</a>
+            </div>
+            <div class="content">
+                <a href="#"><i class='bx bx-trending-up'></i>Upgrade</a>
+                <a href="#"><i class='bx bxs-wrench'></i>Settings</a>
+                <a href="#"><i class='bx bx-log-out'></i>Log Out</a>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript">
+    
+        function userMenu() {
+            const userMenu = document.querySelector('.dropdown');
+            userMenu.classList.toggle('active');
+        }
+    
+    </script>
+    
+</body>
+</html>
